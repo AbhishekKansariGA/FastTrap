@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FastTrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+  <!--==========HEADER SECTION============= -->
+
+
+
+  <header class="header-section">
+    <img class="myIcon" src="images/abhishek.png" alt="Abhishek Kansari" />
+    <a class="a-heading" href="">Abhishek Kansari</a>
+  </header>
+
+
+
+
+
+
+
+
+
+
+  <!-- .......MENU SECTION START............-->
+
+
+
+
+
+
+
+  <!-- Vertical navbar -->
+  <div class="vertical-nav" id="sidebar">
+    <div id="div-menu_light" class="py-4 px-3 mb-4">
+      <div class="media d-flex align-items-center">
+        <img loading="lazy" src="images/abhishek.png" alt="..." width="80" height="80" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+        <div class="media-body">
+          <h4 class="m-0">Abhishek</h4>
+          <p class="font-weight-normal text-muted mb-0">Web developer</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Dashboard</p>
+
+    <ul id="ul-bg" class="nav flex-column mb-0">
+      <li class="nav-item">
+        <a id="text-bg" href="/Index.html" class="nav-link">
+          <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+          home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a id="text-bg" href="/about.html" class="nav-link ">
+          <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+          about
+        </a>
+      </li>
+      <li class="nav-item">
+        <a id="text-bg" href="service.html" class="nav-link">
+          <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+          services
+        </a>
+      </li>
+      <li class="nav-item">
+        <a id="text-bg" href="contact.html" class="nav-link">
+          <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+          Contact
+        </a>
+      </li>
+    </ul>
+
+    <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
+
+    <ul id="ul-white-two" class="nav flex-column mb-0">
+      <li class="nav-item">
+        <a href="/areaChart.html" class="nav-link ">
+          <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+          area charts
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/barChart.html" class="nav-link ">
+          <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+          bar charts
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/pieChart.html" class="nav-link ">
+          <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
+          pie charts
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/lineChart.html" class="nav-link ">
+          <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
+          line charts
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- End vertical navbar -->
+  <!-- Page content holder -->
+  <div class="page-content p-5" id="content">
+    <!-- Toggle button -->
+    <button id="sidebarCollapse" type="button" class="btn btn-light rounded-pill shadow-sm px-4 mb-4"><i id="dot-three" class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Menu</small></button>
+
+    <!-- Demo content -->
+    <!-- End demo content -->
+
+
+
+
+
+
+
+
+
+
+    <!-- MAIN PART STARTING...............-->
+
+
+
+    <!--=========Bio Data Section============ -->
+
+
+    <section class="bio-data">
+      <p class="bio-top-para">Hey <br />
+      <p class="bio-txt">I'm</p>
+      </p>
+      <h4 class="bio-heading">Abhishek Kansari</h4>
+      <p class="bio-txt">Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.</p>
+    </section>
+    <br /><br /><br /><br /><br /><br />
+
+
+
+
+
+
+
+
+
+
+    <!--===========Products Section===========-->
+
+
+    <h2 class="h2-prd">Products</h2>
+    <br />
+    <section class="carousel" data-flickity='{ "wrapAround":true,"autoPlay":true}'>
+
+      <div class="carousel-cell">
+        <a class="img-hori" href=""><img class="img-prd" src="images/img.png"></a>
+      </div>
+
+      <div class="carousel-cell">
+        <a class="img-hori" href=""><img class="img-prd" src="images/img1.png"></a>
+      </div>
+
+      <div class="carousel-cell">
+        <a class="img-hori" href=""><img class="img-prd" src="/images/img2.png"></a>
+      </div>
+
+      <div class="carousel-cell">
+        <a class="img-hori" href=""><img class="img-prd" src="/images/img3.png"></a>
+      </div>
+
+      <div class="carousel-cell">
+        <a class="img-hori" href=""><img class="img-prd" src="/images/img4.png"></a>
+      </div>
+
+      <div class="carousel-cell">
+        <a class="img-hori" href=""><img class="img-prd" src="/images/img5.png"></a>
+      </div>
+
+      <div class="carousel-cell">
+        <a class="img-hori" href=""><img class="img-prd" src="/images/img6.png"></a>
+      </div>
+
+      <div class="carousel-cell">
+        <a class="img-hori" href=""><img class="img-prd" src="/images/img7.png"></a>
+      </div>
+    </section>
+
+    <br /><br /><br /><br />
+
+
+
+
+
+
+
+
+
+
+    <!--=========Circle Section ============= -->
+
+
+
+
+    <section class="circle-section" data-aos="zoom-in-down">
+      <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+        <g transform="translate(131, -160)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+              <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M466.5,328Q436,406,363,440Q290,474,208,469.5Q126,465,76,398.5Q26,332,25,250Q24,168,75.5,102.5Q127,37,208.5,29.5Q290,22,359.5,61Q429,100,463,175Q497,250,466.5,328Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(197, -66)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+              <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M466.5,328Q436,406,363,440Q290,474,208,469.5Q126,465,76,398.5Q26,332,25,250Q24,168,75.5,102.5Q127,37,208.5,29.5Q290,22,359.5,61Q429,100,463,175Q497,250,466.5,328Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(383, -202)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+              <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M466.5,328Q436,406,363,440Q290,474,208,469.5Q126,465,76,398.5Q26,332,25,250Q24,168,75.5,102.5Q127,37,208.5,29.5Q290,22,359.5,61Q429,100,463,175Q497,250,466.5,328Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(236, -9)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+              <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M466.5,328Q436,406,363,440Q290,474,208,469.5Q126,465,76,398.5Q26,332,25,250Q24,168,75.5,102.5Q127,37,208.5,29.5Q290,22,359.5,61Q429,100,463,175Q497,250,466.5,328Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(-116, -124)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+              <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M466.5,328Q436,406,363,440Q290,474,208,469.5Q126,465,76,398.5Q26,332,25,250Q24,168,75.5,102.5Q127,37,208.5,29.5Q290,22,359.5,61Q429,100,463,175Q497,250,466.5,328Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(-358, 229)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+              <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M466.5,328Q436,406,363,440Q290,474,208,469.5Q126,465,76,398.5Q26,332,25,250Q24,168,75.5,102.5Q127,37,208.5,29.5Q290,22,359.5,61Q429,100,463,175Q497,250,466.5,328Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(-345, -185)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+              <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M466.5,328Q436,406,363,440Q290,474,208,469.5Q126,465,76,398.5Q26,332,25,250Q24,168,75.5,102.5Q127,37,208.5,29.5Q290,22,359.5,61Q429,100,463,175Q497,250,466.5,328Z" fill="url(#gradient)"></path>
+        </g>
+      </svg>
+      <p class="p-circle">What have you noticed today? I noticed that if you outline the eyes, nose, and mouth on your face with your finger, you make an "I" which makes perfect sense, but is something I never noticed before. What have you noticed today?</p>
+
+    </section>
+
+
+    <br /><br /><br /><br />
+
+
+    <section class="circle-section" data-aos="zoom-in-down">
+      <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+        <g transform="translate(-360, -211)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(76, 161, 175);"></stop>
+              <stop offset="100%" style="stop-color: rgb(196, 224, 229);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M462.5,317.5Q435,385,371,404.5Q307,424,240.5,454Q174,484,124.5,430.5Q75,377,52,313.5Q29,250,43.5,180Q58,110,124,87Q190,64,251,62Q312,60,365.5,93.5Q419,127,454.5,188.5Q490,250,462.5,317.5Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(376, 6)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(76, 161, 175);"></stop>
+              <stop offset="100%" style="stop-color: rgb(196, 224, 229);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M462.5,317.5Q435,385,371,404.5Q307,424,240.5,454Q174,484,124.5,430.5Q75,377,52,313.5Q29,250,43.5,180Q58,110,124,87Q190,64,251,62Q312,60,365.5,93.5Q419,127,454.5,188.5Q490,250,462.5,317.5Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(232, 88)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(76, 161, 175);"></stop>
+              <stop offset="100%" style="stop-color: rgb(196, 224, 229);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M462.5,317.5Q435,385,371,404.5Q307,424,240.5,454Q174,484,124.5,430.5Q75,377,52,313.5Q29,250,43.5,180Q58,110,124,87Q190,64,251,62Q312,60,365.5,93.5Q419,127,454.5,188.5Q490,250,462.5,317.5Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(295, 105)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(76, 161, 175);"></stop>
+              <stop offset="100%" style="stop-color: rgb(196, 224, 229);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M462.5,317.5Q435,385,371,404.5Q307,424,240.5,454Q174,484,124.5,430.5Q75,377,52,313.5Q29,250,43.5,180Q58,110,124,87Q190,64,251,62Q312,60,365.5,93.5Q419,127,454.5,188.5Q490,250,462.5,317.5Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(382, -143)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(76, 161, 175);"></stop>
+              <stop offset="100%" style="stop-color: rgb(196, 224, 229);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M462.5,317.5Q435,385,371,404.5Q307,424,240.5,454Q174,484,124.5,430.5Q75,377,52,313.5Q29,250,43.5,180Q58,110,124,87Q190,64,251,62Q312,60,365.5,93.5Q419,127,454.5,188.5Q490,250,462.5,317.5Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(-21, 173)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(76, 161, 175);"></stop>
+              <stop offset="100%" style="stop-color: rgb(196, 224, 229);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M462.5,317.5Q435,385,371,404.5Q307,424,240.5,454Q174,484,124.5,430.5Q75,377,52,313.5Q29,250,43.5,180Q58,110,124,87Q190,64,251,62Q312,60,365.5,93.5Q419,127,454.5,188.5Q490,250,462.5,317.5Z" fill="url(#gradient)"></path>
+        </g>
+      </svg>
+
+      <p class="p-circle">You can decide what you want to do in life, but I suggest doing something that creates. Something that leaves a tangible thing once you're done. That way even after you're gone, you will still live on in the things you created.</p>
+    </section>
+
+
+    <br /><br /><br />
+
+    <section class="new-lss" data-aos="zoom-out-down">
+      <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+        <g transform="translate(-187, 138)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(194, 229, 156);"></stop>
+              <stop offset="100%" style="stop-color: rgb(100, 179, 244);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M462,326Q431,402,358.5,427Q286,452,206,458Q126,464,81,396Q36,328,34.5,249.5Q33,171,81,106Q129,41,208,40Q287,39,351.5,75Q416,111,454.5,180.5Q493,250,462,326Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(-63, 75)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(194, 229, 156);"></stop>
+              <stop offset="100%" style="stop-color: rgb(100, 179, 244);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M462,326Q431,402,358.5,427Q286,452,206,458Q126,464,81,396Q36,328,34.5,249.5Q33,171,81,106Q129,41,208,40Q287,39,351.5,75Q416,111,454.5,180.5Q493,250,462,326Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(-118, 239)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(194, 229, 156);"></stop>
+              <stop offset="100%" style="stop-color: rgb(100, 179, 244);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M462,326Q431,402,358.5,427Q286,452,206,458Q126,464,81,396Q36,328,34.5,249.5Q33,171,81,106Q129,41,208,40Q287,39,351.5,75Q416,111,454.5,180.5Q493,250,462,326Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(-381, -41)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(194, 229, 156);"></stop>
+              <stop offset="100%" style="stop-color: rgb(100, 179, 244);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M462,326Q431,402,358.5,427Q286,452,206,458Q126,464,81,396Q36,328,34.5,249.5Q33,171,81,106Q129,41,208,40Q287,39,351.5,75Q416,111,454.5,180.5Q493,250,462,326Z" fill="url(#gradient)"></path>
+        </g>
+        <g transform="translate(-23, -203)">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color: rgb(194, 229, 156);"></stop>
+              <stop offset="100%" style="stop-color: rgb(100, 179, 244);"></stop>
+            </linearGradient>
+          </defs>
+          <path class="blob" d="M462,326Q431,402,358.5,427Q286,452,206,458Q126,464,81,396Q36,328,34.5,249.5Q33,171,81,106Q129,41,208,40Q287,39,351.5,75Q416,111,454.5,180.5Q493,250,462,326Z" fill="url(#gradient)"></path>
+        </g>
+      </svg>
+      <p class="p-circle-lss">He heard the crack echo in the late afternoon about a mile away. His heart started racing and he bolted into a full sprint. "It wasn't a gunshot, it wasn't a gunshot," he repeated under his breathlessness as he continued to sprint.</p>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- =======Achivements Section========== -->
+
+
+    <br /><br /><br />
+    <h2 class="h2-prd">Achivements</h2>
+    <br />
+    <section class="progress-sect" data-aos="flip-left">
+
+      <div class="first-cr">
+        <div class="outer">
+          <div class="inner">
+            <div id="num" class="num">
+              65%
+            </div>
+          </div>
+        </div>
+
+
+        <svg class="svg-progress" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle class="cr-progress" cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+      </div>
+      <p class="prs-para">HTML</p>
+
+    </section>
+
+
+
+    <br /><br /><br />
+
+
+    <section class="progress-sect" data-aos="fade-up">
+
+      <div class="first-cr">
+        <div class="outer">
+          <div class="inner">
+            <div id="numOne" class="numOne">
+              80%
+            </div>
+          </div>
+        </div>
+
+
+
+        <svg class="svg-progress" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle class="cr-progress1" cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+      </div>
+      <p class="prs-para">CSS</p>
+    </section>
+
+
+
+    <br /><br /><br />
+
+
+    <section class="progress-sect" data-aos="fade-up-right">
+
+      <div class="first-cr">
+        <div class="outer">
+          <div class="inner">
+            <div id="numTwo" class="numTwo">
+              60%
+            </div>
+          </div>
+        </div>
+
+
+
+        <svg class="svg-progress" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle class="cr-progress2" cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+      </div>
+      <p class="prs-para">JavaScript</p>
+    </section>
+
+
+    <br /><br /><br />
+
+
+    <section class="progress-sect" data-aos="fade-up">
+
+      <div class="first-cr">
+        <div class="outer">
+          <div class="inner">
+            <div id="numJava" class="numJava">
+              99%
+            </div>
+          </div>
+        </div>
+
+
+
+        <svg class="svg-progress" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle class="cr-progressJava" cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+      </div>
+      <p class="prs-para">Java</p>
+    </section>
+
+    <br /><br /><br />
+
+    <section class="progress-sect" data-aos="zoom-in-left">
+      <div class="first-cr">
+        <div class="outer">
+          <div class="inner">
+            <div id="numKt" class="numJava">
+              99%
+            </div>
+          </div>
+        </div>
+
+
+
+        <svg class="svg-progress" xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+            <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#e91e63" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle class="cr-progressJava" cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+      </div>
+      <p class="prs-para">Kotlin</p>
+    </section>
+
+
+
+    <br /><br /><br /><br />
+
+
+
+
+
+
+    <!--=========∆ Shopping Part ∆=========== -->
+
+
+
+
+
+
+
+    <h2 class="h2-prd">Shop Now</h2>
+    <br /><br />
+
+
+
+    <section id="card-sect" class="carousel2" data-flickity='{ "wrapAround":true,"autoPlay":true}'>
+
+
+
+      <div class="card-div">
+
+
+        <img class="card-img" src="./images/boat.png" alt="">
+        <div class="discount-div">
+          <p class="discount-para">you save 60.01%</p>
+        </div>
+
+        <div class="white-div"></div>
+        <h4 class="card-heading">boAt Immortal 700</h4>
+        <p class="boat-rate">$19.99 <del><small>$49.99</small></del></p>
+
+        <div class="features">
+          <ul>
+            <li>Colour variants for every style
+            </li>
+            <li>Fast Charge in just 15 minutes </li>
+            <li>Ace your workouts with IPX5 rating </li>
+          </ul>
+        </div>
+
+        <button id="buy-btn" type="button" class="btn btn-primary">Buy now</button>
+
+
+
+      </div>
+
+
+
+
+
+      <div class="card-div">
+        <img class="card-img" src="/images/watch.png" alt="">
+        <div class="discount-div">
+          <p class="discount-para">you save 43%</p>
+        </div>
+
+        <div class="white-div"></div>
+        <h4 class="card-heading">boAt Watch Xtend</h4>
+        <p class="boat-rate">$49.99 <del><small>$89.99</small></del></p>
+
+        <div class="features">
+          <ul>
+            <li>Colour variants for every style
+            </li>
+            <li>Fast Charge in just 15 minutes </li>
+            <li>Ace your workouts with IPX5 rating </li>
+          </ul>
+        </div>
+
+        <button id="buy-btn-two" type="button" class="btn btn-primary">Buy now</button>
+
+      </div>
+
+
+
+      <div class="card-div">
+        <img class="card-img" src="/images/t-shirt.png" alt="">
+        <div class="discount-div">
+          <p class="discount-para">you save 80%</p>
+        </div>
+
+        <div class="white-div"></div>
+        <h4 class="card-heading">T-shirt</h4>
+        <p class="boat-rate">$29.99 <del><small>$39.99</small></del></p>
+
+        <div class="features">
+          <ul>
+            <li>Colour variants for every style
+            </li>
+            <li>Fast Charge in just 15 minutes </li>
+            <li>Ace your workouts with IPX5 rating </li>
+          </ul>
+        </div>
+
+        <button id="buy-btn-three" type="button" class="btn btn-primary">Buy now</button>
+
+      </div>
+
+
+
+      <div class="card-div">
+        <img class="card-img" src="/images/macbook.png" alt="">
+        <div class="discount-div">
+          <p class="discount-para">you save 59%</p>
+        </div>
+
+        <div class="white-div"></div>
+        <h4 class="card-heading">Macbook Pro</h4>
+        <p class="macbook">$2,613.99 <del><small>$3,999.99</small></del></p>
+
+        <div class="features">
+          <ul>
+            <li>Colour variants for every style
+            </li>
+            <li>Fast Charge in just 15 minutes </li>
+            <li>Ace your workouts with IPX5 rating </li>
+          </ul>
+        </div>
+
+        <button id="buy-btn-four" type="button" class="btn btn-primary">Buy now</button>
+
+      </div>
+    </section>
+
+
+
+
+    <!-- ======SCROLL UP PART ========-->
+
+
+    <a class="top-btn" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+      </svg></a>
+
+
+
+
+
+
+
+    <section class="subscribe-sect">
+      <p>Subscribe to email alerts. We promise not to spam your inbox.</p>
+      <form action="https://formspree.io/f/mqkngwpl" method="POST">
+        <input id="input-area" name="Subscribed" type="email" placeholder="Email Address*" autocomplete="off" required>
+        <button onsubmit="subMe()" id="subscribe-btn" class="subscribe-btn" type="submit">SUBSCRIBE</button>
+      </form>
+    </section>
+
+
+    <br /><br /><br /><br />
+
+
+    <h2 class="h2-prd">Follow Us On</h2>
+
+    <section class="icons-sect">
+      <div class="fb-icon">
+        <svg onclick="myFb()" class="fb-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+        </svg>
+      </div>
+
+      <div class="fb-icon">
+        <svg onclick="myIg()" class="fb-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+        </svg>
+      </div>
+
+      <div class="fb-icon">
+        <svg onclick="myTw()" class="fb-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+        </svg>
+      </div>
+
+      <div class="fb-icon">
+        <svg onclick="myYt()" class="fb-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+        </svg>
+      </div>
+
+      <div class="fb-icon">
+        <svg onclick="linkedin()" class="fb-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+        </svg>
+      </div>
+
+    </section>
+
+
+    <section class="payment-sect">
+      <img src="./images/payment.png" alt="Payment">
+    </section>
+
+
+
+
+
+    <footer class="para-footer">
+      <p>© 2022 G.A PRODUCTIONS LIMITED. All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+
+
+    <!--============ Scripts ================ -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+    </script>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

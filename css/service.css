@@ -1,0 +1,47 @@
+#service-sect {
+  height: 100vh;
+  background: #fff;
+}
+
+#h1-color {
+  color: #000;
+}
+
+
+.area-sect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#chart_div {
+  color: red;
+  background: black;
+}
+
+
+@media (max-width: 800px) {
+  #service-sect {
+    height: 100rem;
+  }
+}
+
+@media (max-width:500px) {
+  #service-sect {
+    height: 100rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  #service-sect {
+    background: #000;
+  }
+
+  #h1-color {
+    color: #fff;
+  }
+
+  .area-sect {
+    background: #000;
+  }
+}

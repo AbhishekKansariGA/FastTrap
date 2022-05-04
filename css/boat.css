@@ -1,0 +1,211 @@
+/********************************************
+IMPORTING FONTS =====>
+
+********************************************/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+/********************************************
+
+ROOT PART =====>
+
+********************************************/
+
+
+:root {
+  --background: rgb(249, 249, 255);
+  --heading: #3a86ff;
+  --para: #777;
+  --white: #fff;
+  --black: #212529;
+  --shadow: box-shadow:-2rem -2rem 0 0 #8490ff;
+  --btnColor: linear-gradient(to right, #732FDF, #BD00FF);
+}
+
+/********************************************
+
+BASIC  CODES=====>
+
+********************************************/
+
+
+
+
+html {
+  font-size: 62.5%;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  color: var(--para);
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+
+
+
+
+.comingSoon-sect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+#cardComing {
+  margin-top: 50%;
+}
+
+.cardDiv-Link {
+  width: 12rem;
+  height: 3rem;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+#aLink {
+  margin-top: -6.5%;
+  margin-left: 7%;
+  position: absolute;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+#aLink:hover {
+  color: var(--heading);
+}
+
+
+#buyLink {
+  width: 12rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 135%;
+  margin-left: 60%;
+}
+
+#buyLink-mac {
+  width: 12rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 128%;
+  margin-left: 60%;
+}
+
+.discount-div {
+  width: 12rem;
+  height: 2rem;
+  color: #fff;
+  background-color: var(--heading);
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -120%;
+  margin-left: 7%;
+}
+
+.card-text {
+  color: var(--para);
+}
+
+.discount-para {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-family: 'Hind', sans-serif;
+  font-weight: 900;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 10%;
+}
+
+
+@media (prefers-color-scheme:dark) {
+  .comingSoon-sect {
+    background: var(--black);
+  }
+
+  .cardDiv-Link {
+    background: #000;
+  }
+
+  .aLink {
+    color: var(--white);
+  }
+
+  #cardComing {
+    background: var(--black);
+    border-color: var(--white);
+  }
+
+  .card-title {
+    color: var(--white);
+  }
+}
